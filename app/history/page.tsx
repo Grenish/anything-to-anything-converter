@@ -17,13 +17,7 @@ import {
 } from "@/components/ui/empty";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import {
-  ArrowBigRight,
-  ArrowLeft,
-  File,
-  FileJson,
-  History,
-} from "lucide-react";
+import { ArrowBigRight, ArrowLeft, File, History } from "lucide-react";
 import Link from "next/link";
 
 import { useState, useEffect } from "react";
@@ -157,7 +151,7 @@ const ItemsCard = ({
           download={fileName}
           className={cn(
             buttonVariants({ variant: "outline", size: "lg" }),
-            "w-full sm:w-auto"
+            "w-full sm:w-auto",
           )}
         >
           Download {output}
